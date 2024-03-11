@@ -1,2 +1,2 @@
-
+:root{--purple:#854dff;--light-red:#ff5757;--white:#fff;--off-white:#f0f0f0;--light-grey:#dbdbdb;--smokey-grey:#716f6f;--off-black:#141414;--font-poppins:"Poppins",sans-serif}html{box-sizing:border-box;font-size:100%}body{background-color:var(--white);font-family:var(--font-poppins);margin:0;overflow-x:hidden;padding:0}*,:after,:before{box-sizing:inherit}p{font-size:2rem}
 /*# sourceMappingURL=style.css.map */
