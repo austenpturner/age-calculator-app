@@ -1,0 +1,34 @@
+{
+  "name": "age-calculator-app",
+  "version": "1.0.0",
+  "description": "age calculator app challenge from Frontend Mentor",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austenpturner/age-calculator-app.git"
+  },
+  "author": "Austen P. Turner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/austenpturner/age-calculator-app/issues"
+  },
+  "homepage": "https://github.com/austenpturner/age-calculator-app#readme",
+  "dependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "autoprefixer": "^10.4.18",
+    "browser-sync": "^3.0.2",
+    "cssnano": "^6.1.0",
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.4.35",
+    "sass": "^1.71.1"
+  }
+}
