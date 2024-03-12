@@ -1,0 +1,22 @@
+@use '../util/' as *;
+
+.input {
+    // &__container {
+
+    // }
+    &__label {
+        text-transform: uppercase;
+    }
+    &__input {
+        width: rem(80);
+    }
+    // &__control {
+
+    //     &--required {
+
+    //     }
+    //     &--valid {
+
+    //     }
+    // }
+}
