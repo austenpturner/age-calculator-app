@@ -16,23 +16,58 @@
   <script defer src="/dist/script.js"></script>
 </head>
 <body>
+  <div class="container app-container">
+    <div class="form-container">
+      <form class="form flex-row" action="post">
 
-  Day
-  DD
+        <!-- DAY -->
+        <div class="input-container flex-column">
+          <label for="day">Day</label>
+          <input id="day" type="number" name="day" placeholder="DD"/>
+          <div class="form-control--required">This field is required</div>
+          <div class="form-control--valid">Must be a valid day</div>
+        </div>
 
-  Month
-  MM
+        <!-- MONTH -->
+        <div class="input-container flex-column">
+          <label for="month">Month</label>
+          <input id="month" type="number" name="month" placeholder="MM"/>
+          <div class="form-control--required">This field is required</div>
+          <div class="form-control--valid">Must be a valid month</div>
+        </div>
 
-  Year
-  YYYY
+        <!-- YEAR -->
+        <div class="input-container flex-column">
+          <label for="year">Year</label>
+          <input id="year" type="number" name="year" placeholder="YYYY"/>
+          <div class="form-control--required">This field is required</div>
+          <div class="form-control--valid">Must be a valid year</div>
+        </div>
+        <button type="submit">
+          <img src="./assets/images/icon-arrow.svg" alt="submit button">
+        </button>
+      </form>
+    </div>
 
-  -- years
-  -- months
-  -- days
+    <div class="output-container">
+      <h2 class="output__label--year">
+        <span class="output__number--year">38</span>
+        Years
+      </h2>
+      <h2 class="output__label--months">
+        <span class="output__number--months">3</span>
+        Months
+      </h2>
+      <h2 class="output__label--days">
+        <span class="output__number--days">26</span>
+        Days
+      </h2>
+    </div>
+  </div>
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>

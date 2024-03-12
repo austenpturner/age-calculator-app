@@ -1,8 +1,11 @@
 @use '../util/' as *;
 
-// h1, h2, h3 {
-
-// } 
+h2 {
+    font-size: rem(40);
+    @include breakpoint(large) {
+        font-size: rem(60);
+    }
+}
 
 // Font size (inputs): 32px
 p {

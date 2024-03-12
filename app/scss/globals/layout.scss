@@ -1,1 +1,23 @@
 @use '../util/' as *;
+
+.container {
+    background: var(--white);
+    border-radius: 5% 5% 25% 5%;
+    height: rem(500);
+    margin: rem(80) auto 0;
+    max-width: rem(800);
+    width: 90vw;
+    @include breakpoint(large) {
+        margin-top: 20vh;
+    }
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
