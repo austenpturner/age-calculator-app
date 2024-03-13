@@ -7,6 +7,7 @@
     position: relative;
     @include breakpoint(large) {
         margin: 0 rem(48);
+        padding-bottom: rem(40);
     }
     button {
         background: var(--purple);
@@ -19,12 +20,13 @@
         top: calc(100% - rem(31.75));
         transition: background 0.25s ease-out;
         width: rem(63.5);
-        &:hover {
+        &:hover, &:focus {
             background: var(--off-black);
+            outline: none;
         }
         @include breakpoint(large) {
             left: calc(100% - rem(63));
-            width: rem(63);
+            width: rem(71.5);
         }
         img {
             height: rem(24);
