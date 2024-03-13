@@ -1,22 +1,33 @@
 @use '../util/' as *;
 
 .input {
-    // &__container {
-
-    // }
+    width: 33.33%;
+    &:first-child, 
+    &:nth-child(2) {
+        margin-right: rem(16);
+    }
     &__label {
+        color: var(--smokey-grey);
+        font-size: rem(12);
+        font-weight: 700;
+        letter-spacing: rem(3.5);
+        margin-bottom: rem(5);
         text-transform: uppercase;
     }
     &__input {
-        width: rem(80);
+        border: 1px solid var(--light-grey);
+        border-radius: 8px;
+        font-size: rem(20);
+        font-weight: 700;
+        padding: rem(12);
+        padding-right: rem(2);
+        width: 100%;
+        &:focus {
+            border: 1px solid var(--purple);
+            outline: none;
+        }
     }
-    // &__control {
-
-    //     &--required {
-
-    //     }
-    //     &--valid {
-
-    //     }
-    // }
+    &__control {
+        display: none;
+    }
 }

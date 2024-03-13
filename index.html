@@ -20,27 +20,27 @@
     <form class="form flex-row" action="post">
 
       <!-- DAY -->
-      <div class="input input__container flex-column">
+      <div class="input flex-column">
         <label for="day" class="input__label">Day</label>
-        <input id="day" class="input__input" type="number" name="day" placeholder="DD"/>
-        <div class="input__control--required">This field is required</div>
-        <div class="input__control--valid">Must be a valid day</div>
+        <input id="day" class="input__input" type="number" min="1" max="31" name="day" placeholder="DD"/>
+        <div class="input__control">This field is required</div>
+        <div class="input__control">Must be a valid day</div>
       </div>
 
       <!-- MONTH -->
-      <div class="input input__container flex-column">
+      <div class="input flex-column">
         <label for="month" class="input__label">Month</label>
-        <input id="month" class="input__input" type="number" name="month" placeholder="MM"/>
-        <div class="form__control--required">This field is required</div>
-        <div class="form__control--valid">Must be a valid month</div>
+        <input id="month" class="input__input" type="number" min="1" max="12" name="month" placeholder="MM"/>
+        <div class="input__control">This field is required</div>
+        <div class="input__control">Must be a valid month</div>
       </div>
 
       <!-- YEAR -->
-      <div class="input input__container flex-column">
+      <div class="input flex-column">
         <label for="year" class="input__label">Year</label>
-        <input id="year" class="input__input" type="number" name="year" placeholder="YYYY"/>
-        <div class="form__control--required">This field is required</div>
-        <div class="form__control--valid">Must be a valid year</div>
+        <input id="year" class="input__input" type="number" min="0" name="year" placeholder="YYYY"/>
+        <div class="input__control">This field is required</div>
+        <div class="input__control">Must be a valid year</div>
       </div>
       <button type="submit">
         <img src="./assets/images/icon-arrow.svg" alt="submit button">

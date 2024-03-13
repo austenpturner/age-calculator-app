@@ -2,8 +2,8 @@
 
 .form {
     border-bottom: rem(1) solid var(--light-grey);
-    margin: 0 rem(28);
-    padding: rem(48) 0;
+    margin: 0 rem(24);
+    padding: rem(48) 0 rem(60);
     position: relative;
     @include breakpoint(large) {
         margin: 0 rem(48);
@@ -13,12 +13,12 @@
         border: none;
         border-radius: 50%;
         cursor: pointer;
-        padding: rem(14);
+        padding: rem(18);
         position: absolute;
-        left: calc(50% - rem(27.5));
-        top: calc(100% - rem(27.5));
+        left: calc(50% - rem(31.75));
+        top: calc(100% - rem(31.75));
         transition: background 0.25s ease-out;
-        width: rem(55);
+        width: rem(63.5);
         &:hover {
             background: var(--off-black);
         }
