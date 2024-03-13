@@ -21,26 +21,56 @@
 
       <!-- DAY -->
       <div class="input flex-column">
-        <label for="day" class="input__label">Day</label>
-        <input id="day" class="input__input" type="number" min="1" max="31" name="day" placeholder="DD"/>
-        <div class="input__control">This field is required</div>
-        <div class="input__control">Must be a valid day</div>
+        <label for="day" class="input__label input__label--day">Day</label>
+        <input 
+          id="day" 
+          class="input__input input__input--day" 
+          type="number" min="1" max="31" 
+          name="day" 
+          placeholder="DD"
+        />
+        <p class="input__required input__required--day">
+          This field is required
+        </p>
+        <p class="input__invalid input__invalid--day">
+          Must be a valid day
+        </p>
       </div>
 
       <!-- MONTH -->
       <div class="input flex-column">
-        <label for="month" class="input__label">Month</label>
-        <input id="month" class="input__input" type="number" min="1" max="12" name="month" placeholder="MM"/>
-        <div class="input__control">This field is required</div>
-        <div class="input__control">Must be a valid month</div>
+        <label for="month" class="input__label input__label--month">Month</label>
+        <input 
+          id="month" 
+          class="input__input input__input--month" 
+          type="number" min="1" max="12" 
+          name="month" 
+          placeholder="MM"
+        />
+        <p class="input__required input__required--month">
+          This field is required
+        </p>
+        <p class="input__invalid input__invalid--month">
+          Must be a valid month
+        </p>
       </div>
 
       <!-- YEAR -->
       <div class="input flex-column">
-        <label for="year" class="input__label">Year</label>
-        <input id="year" class="input__input" type="number" min="0" name="year" placeholder="YYYY"/>
-        <div class="input__control">This field is required</div>
-        <div class="input__control">Must be a valid year</div>
+        <label for="year" class="input__label input__label--year">Year</label>
+        <input 
+          id="year" 
+          class="input__input input__input--year" 
+          type="number" min="0" 
+          name="year" 
+          placeholder="YYYY"
+        />
+        <p class="input__required input__required--year">
+          This field is required
+        </p>
+        <p class="input__invalid input__invalid--year">
+          Must be a valid year
+        </p>
       </div>
       <button type="submit">
         <img src="./assets/images/icon-arrow.svg" alt="submit button">
@@ -49,18 +79,18 @@
 
     <div class="output container">
 
-      <h2 class="output__label--years">
-        <span class="output__number--years">38</span>
+      <h2 class="output__label output__label--years">
+        <span class="output__number output__number--years">--</span>
         Years
       </h2>
 
-      <h2 class="output__label--months">
-        <span class="output__number--months">3</span>
+      <h2 class="output__label output__label--months">
+        <span class="output__number output__number--months">--</span>
         Months
       </h2>
 
-      <h2 class="output__label--days">
-        <span class="output__number--days">26</span>
+      <h2 class="output__label output__label--days">
+        <span class="output__number output__number--days">--</span>
         Days
       </h2>
 

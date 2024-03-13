@@ -2,12 +2,7 @@
 
 .output {
     padding-bottom: rem(48);
-    // @include breakpoint(large) {
-    //     padding: rem(48) 0;
-    // }
-    &__label--years,
-    &__label--months,
-    &__label--days {
+    &__label{
         font-size: rem(52);
         font-style: italic;
         font-weight: 800;
@@ -18,9 +13,7 @@
             font-size: rem(82);
         }
     }
-    &__number--years,
-    &__number--months,
-    &__number--days {
+    &__number {
         color: var(--purple);
         margin-right: rem(-5);
     }
