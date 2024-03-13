@@ -2,11 +2,9 @@
 
 .form {
     border-bottom: rem(1) solid var(--light-grey);
-    margin: 0 rem(24);
-    padding: rem(48) 0 rem(60);
+    padding-top: rem(48);
     position: relative;
     @include breakpoint(large) {
-        margin: 0 rem(48);
         padding-bottom: rem(40);
     }
     button {
