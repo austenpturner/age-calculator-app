@@ -1,13 +1,18 @@
 @use '../util/' as *;
 
 h2 {
-    font-size: rem(40);
+    font-size: rem(52);
+    font-style: italic;
+    font-weight: 800;
+    line-height: 1.1;
     @include breakpoint(large) {
-        font-size: rem(60);
+        font-size: rem(82);
     }
 }
 
-// Font size (inputs): 32px
 p {
-    font-size: rem(32);
+    font-size: rem(8);
+    @include breakpoint(large) {
+        font-size: rem(10);
+    }
 }

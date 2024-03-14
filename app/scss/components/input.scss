@@ -28,19 +28,24 @@
         padding: rem(12);
         padding-right: rem(2);
         width: 100%;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        &[type=number] {
+            appearance: textfield;
+        }
         &:focus {
             border: 1px solid var(--purple);
             outline: none;
         }
     }
-    &__required,
-    &__invalid {
+    &__control {
         color: var(--light-red);
-        font-size: rem(8);
+        font-style: italic;
+        font-weight: 400;
         display: none;
         margin: 0;
-        @include breakpoint(large) {
-            font-size: rem(10);
-        }
     } 
 }

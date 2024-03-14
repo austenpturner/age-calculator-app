@@ -10,14 +10,14 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/dist/style.css">
   <script defer src="/dist/script.js"></script>
 </head>
 <body>
   <div class="app">
-    <form class="form container flex-row" action="post">
+    <form class="form container flex-row">
 
       <!-- DAY -->
       <div class="input flex-column">
@@ -29,12 +29,7 @@
           name="day" 
           placeholder="DD"
         />
-        <p class="input__required input__required--day">
-          This field is required
-        </p>
-        <p class="input__invalid input__invalid--day">
-          Must be a valid day
-        </p>
+        <p class="input__control input__control--day"></p>
       </div>
 
       <!-- MONTH -->
@@ -47,12 +42,7 @@
           name="month" 
           placeholder="MM"
         />
-        <p class="input__required input__required--month">
-          This field is required
-        </p>
-        <p class="input__invalid input__invalid--month">
-          Must be a valid month
-        </p>
+        <p class="input__control input__control--month"></p>
       </div>
 
       <!-- YEAR -->
@@ -65,14 +55,9 @@
           name="year" 
           placeholder="YYYY"
         />
-        <p class="input__required input__required--year">
-          This field is required
-        </p>
-        <p class="input__invalid input__invalid--year">
-          Must be a valid year
-        </p>
+        <p class="input__control input__control--year"></p>
       </div>
-      <button type="submit">
+      <button type="submit" id="submit">
         <img src="./assets/images/icon-arrow.svg" alt="submit button">
       </button>
     </form>
