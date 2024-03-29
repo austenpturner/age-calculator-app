@@ -21,6 +21,25 @@ const lightGrey = 'hsl(0, 0%, 86%)';
 
 const currentDate = new Date();
 let currentYear = currentDate.getFullYear();
+let currentDay = currentDate.getDate();
+let currentMonth = currentDate.getMonth();
+
+function calculateAge(day, month, year) {
+    month = parseInt(month) - 1;
+    const dateInput = new Date(year, month, day);
+    const currentTimeStamp = currentDate.getTime();
+    const inputTimeStamp = dateInput.getTime();
+    const dateDiff = new Date(currentTimeStamp - inputTimeStamp);
+    const monthDiff = dateDiff.getMonth() + 1;
+    const dayDiff = dateDiff.getDate();
+    const yearDiff = dateDiff.getFullYear();
+    console.log(`${dayDiff} days, ${monthDiff} months, ${yearDiff} years`);
+    const daysOutput = Number(Math.abs(dayDiff) - 1);
+    const monthsOutput = Number(Math.abs(monthDiff) - 1);
+    const yearsOutput = Number(Math.abs(yearDiff) - 1970);
+    console.log(`${daysOutput} days, ${monthsOutput} months, ${yearsOutput} years`);
+}
+
 
 submitBtn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -49,7 +68,7 @@ function validDate(day, month, year) {
         yearInput.style.borderColor = lightGrey;
         dayControlMsg.style.display = 'none';
         dayControlMsg.textContent = '';
-        return true;
+        return calculateAge(day, month, year);
     } else {
         dayLabel.style.color = red;
         dayInput.style.borderColor = red;
